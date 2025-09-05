@@ -1,3 +1,4 @@
 String twoFer([String name = 'you']) {
-   return 'One for $name, one for me.';
+   final who = name.trim().isEmpty ? 'you' : name;
+   return 'One for $who, one for me.';
 }
